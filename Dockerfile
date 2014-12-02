@@ -9,7 +9,7 @@ WORKDIR /usr/src/cine
 RUN npm install --production
 
 # start the censor
-CMD ./node_modules/.bin/coffee run_contexts/rtmp_authenticator.coffee
+CMD ./node_modules/.bin/coffee apps/rtmp_authenticator/index.coffee
 
 # configuration
 EXPOSE 80
